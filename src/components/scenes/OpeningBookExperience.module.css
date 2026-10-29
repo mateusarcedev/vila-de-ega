@@ -1,0 +1,108 @@
+.figure { min-width: 0; margin: 0; }
+.viewport {
+  position: relative;
+  display: grid;
+  min-height: 300px;
+  aspect-ratio: var(--scene-aspect, 16 / 10);
+  overflow: hidden;
+  background: #e9e1d2;
+  isolation: isolate;
+}
+.poster { z-index: 0; object-fit: contain; padding: 2%; transition: opacity .35s ease; }
+.posterHidden { opacity: 0; }
+.canvasSurface { position: absolute; z-index: 1; inset: 0; cursor: grab; touch-action: pan-y; }
+.canvasSurface:active { cursor: grabbing; }
+.canvasSurface canvas { display: block; width: 100% !important; height: 100% !important; outline: none; }
+.viewport:focus-visible { outline: 3px solid var(--flag-blue); outline-offset: -4px; }
+.instructions,.staticNote {
+  position: absolute;
+  z-index: 2;
+  right: 12px;
+  bottom: 10px;
+  max-width: calc(100% - 24px);
+  margin: 0;
+  padding: 5px 8px;
+  color: var(--ink);
+  background: rgba(250,246,237,.84);
+  font: 600 9px/1.4 var(--font-sans),sans-serif;
+  letter-spacing: .035em;
+  pointer-events: none;
+}
+.playbackControls {
+  position: absolute;
+  z-index: 4;
+  bottom: 10px;
+  left: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: calc(100% - 24px);
+}
+.playbackControls button {
+  min-height: 28px;
+  padding: 5px 8px;
+  border: 1px solid rgba(37,43,39,.28);
+  color: var(--ink);
+  background: rgba(250,246,237,.94);
+  font: 600 9px/1.25 var(--font-sans),sans-serif;
+  cursor: pointer;
+}
+.playbackControls button:focus-visible { outline: 2px solid var(--flag-blue); outline-offset: 2px; }
+.staticNote { color: #5b625b; background: rgba(250,246,237,.92); }
+.loading {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #526259;
+  background: rgba(241,231,211,.72);
+  font: 500 12px var(--font-sans),sans-serif;
+}
+.caption {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  padding-top: 11px;
+  color: #60675f;
+  font: 11px/1.55 var(--font-sans),sans-serif;
+}
+.caption button,.caption summary {
+  flex: none;
+  padding: 0;
+  border: 0;
+  color: var(--forest);
+  background: transparent;
+  font: 600 10px/1.5 var(--font-sans),sans-serif;
+  cursor: pointer;
+}
+.caption button { text-decoration: underline; }
+.caption details { position: relative; flex: none; }
+.caption summary { list-style: none; }
+.caption summary::-webkit-details-marker { display: none; }
+.caption ul {
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  width: min(390px,80vw);
+  margin: 8px 0 0;
+  padding: 12px 14px;
+  color: var(--ink);
+  background: var(--paper-light);
+  box-shadow: 0 8px 28px #252b2720;
+  list-style: none;
+}
+@media (max-width: 760px) {
+  .viewport { min-height: 0; }
+  .caption { flex-wrap: wrap; }
+}
+@media (max-width: 520px) {
+  .viewport { aspect-ratio: 4 / 3; }
+  .instructions,.staticNote { right: 8px; bottom: 7px; font-size: 8px; }
+  .playbackControls { bottom: 8px; left: 8px; gap: 4px; }
+  .playbackControls button { min-height: 26px; padding-inline: 6px; font-size: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .poster { transition: none; }
+}

@@ -1,0 +1,8 @@
+.actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 24px; }
+.primary,.secondary { min-height: 46px; border: 0; font: 600 13px var(--font-sans),sans-serif; cursor: pointer; }
+.primary { display: inline-flex; align-items: center; gap: 18px; padding: 12px 18px; color: var(--paper-light); background: var(--forest); transition: background .2s ease; }
+.primary:hover { background: var(--river); }
+.primary:disabled { cursor: progress; opacity: .8; }
+.primary span,.secondary span { font-size: 17px; }
+.secondary { display: inline-flex; align-items: center; gap: 9px; padding: 8px 0; color: var(--ink); background: transparent; }
+.secondary:hover { color: var(--forest); }

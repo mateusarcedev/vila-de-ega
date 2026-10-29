@@ -1,0 +1,11 @@
+.switch { position: relative; display: grid; grid-template-columns: 1fr 1fr; margin: 38px 0 21px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.switch button { display: flex; align-items: center; gap: 13px; min-height: 70px; padding: 10px 15px; border: 0; color: #77776c; background: transparent; text-align: left; cursor: pointer; }
+.switch button + button { border-left: 1px solid var(--line); }
+.switch button > span:first-child { color: var(--bronze); font-size: 19px; }
+.switch strong,.switch small { display: block; }
+.switch strong { color: var(--ink); font-size: 12px; }
+.switch small { margin-top: 2px; font-size: 10px; }
+.switch button.active { background: #eae0cd; }
+.explanation { grid-column: 1/-1; margin: 0; padding: 0 15px 12px; color: #74766c; font: 10px/1.45 var(--font-sans),sans-serif; }
+.switch button:focus-visible { outline: 3px solid var(--flag-blue); outline-offset: -3px; }
+@media (max-width: 520px) { .switch button { gap: 8px; padding: 9px; } .switch strong { font-size: 10px; } .switch small { font-size: 9px; } }

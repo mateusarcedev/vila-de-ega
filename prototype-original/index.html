@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f1e7d3" />
+    <meta name="description" content="Uma experiência interativa para percorrer as histórias, paisagens e memórias de Tefé, no Médio Solimões." />
+    <title>Memórias de Tefé: Histórias que o tempo não levou</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Memórias de Tefé, início">
+        <svg class="brand-flag" viewBox="0 0 42 28" role="img" aria-label="Símbolo inspirado na bandeira de Tefé">
+          <rect width="42" height="9.34" fill="#008c45" />
+          <rect y="9.33" width="42" height="9.34" fill="#fff" />
+          <rect y="18.66" width="42" height="9.34" fill="#f1e900" />
+          <path d="M21 4.8 34.2 24H7.8Z" fill="#092d83" />
+          <g fill="#fff"><path d="m21 10.2.7 1.5 1.7.2-1.2 1.1.3 1.7-1.5-.8-1.5.8.3-1.7-1.2-1.1 1.7-.2z"/><path d="m16 15.5.55 1.1 1.2.2-.88.85.2 1.25L16 18.3l-1.1.6.2-1.25-.9-.85 1.25-.2z"/><path d="m25.6 15 .55 1.2 1.35.15-1 .95.24 1.35-1.14-.65-1.18.65.23-1.35-.98-.95 1.35-.15z"/></g>
+        </svg>
+        <span class="brand-name">Memórias <span>de Tefé</span></span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="#linha-do-tempo">A história</a>
+        <a href="#lugares">Lugares</a>
+        <a href="#vozes">Vozes</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-toggle-text">Menu</span>
+        <span class="menu-glyph" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-scene" aria-label="Ilustração artística de uma paisagem ribeirinha do Médio Solimões">
+          <svg class="landscape" viewBox="0 0 1600 670" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="scene-title scene-desc">
+            <title id="scene-title">Paisagem ilustrada do Médio Solimões</title>
+            <desc id="scene-desc">Rio largo entre camadas de floresta, com uma pequena embarcação no horizonte. Ilustração provisória, não é um registro histórico.</desc>
+            <rect width="1600" height="670" fill="#d7d3b8" />
+            <path d="M0 0h1600v272c-210 8-286-22-455-5-149 15-239-3-364-9-178-8-252 21-424 11C228 259 119 274 0 260Z" fill="#c2c6aa" />
+            <circle cx="1190" cy="141" r="59" fill="#d8bd78" />
+            <path d="M0 248c124-37 212-14 323-29 95-13 156-48 263-33 87 12 124 47 220 35 94-13 178-53 284-38 117 16 162 56 284 42 81-10 143-29 226-13v125H0Z" fill="#526f57" />
+            <path d="M0 283c143-31 221-9 335-10 126 0 169-35 290-20 91 11 137 42 238 31 109-12 159-53 278-39 124 15 181 44 280 33 68-7 119-20 179-8v92H0Z" fill="#315844" />
+            <path d="M0 337c146 4 245-30 375-15 115 14 163 40 259 28 133-18 172-47 291-32 113 14 178 53 306 38 133-15 242-31 369-1v79H0Z" fill="#24483c" />
+            <path d="M0 393c153-26 274-7 421-9 119-1 217-24 332-12 153 16 223 47 362 31 158-18 297-31 485 4v263H0Z" fill="#254b59" />
+            <path d="M0 432c140-10 218 0 327 18 137 22 216 12 354 2 157-11 276 2 389 20 163 26 331 8 530-8v53c-174 19-300 39-467 19-141-17-246-44-394-33-164 12-256 30-407 7C203 493 117 470 0 482Z" fill="#2d5961" />
+            <path d="M0 525c201-19 344 38 527 30 163-7 278-38 436-23 176 17 351 39 637 0v57c-224 35-418 14-585 1-169-13-303 27-474 26C342 615 200 556 0 586Z" fill="#315e64" />
+            <g fill="#1b3b33">
+              <path d="m82 333 27-111 27 111h-13l20 38H74l20-38z"/><path d="m194 324 24-97 24 97h-12l18 32h-49l18-32z"/><path d="m1451 324 27-114 27 114h-14l21 38h-68l21-38z"/><path d="m1536 334 21-89 21 89h-11l16 30h-52l16-30z"/>
+            </g>
+            <g fill="#a47d47" opacity=".65"><path d="M292 388h102v4H292zM414 375h71v3h-71zM1122 401h128v4h-128zM1300 386h90v3h-90z"/><path d="M229 464h115v3H229zM874 478h89v3h-89zM1084 512h146v3h-146zM490 548h122v3H490z"/></g>
+            <g transform="translate(780 357)">
+              <path d="M0 43c43 5 103 5 149-1l-22 19H23Z" fill="#583f2f" />
+              <path d="M60 39V2l34 36Z" fill="#f1e7d3" />
+              <path d="M64 11 88 36H64Z" fill="#a47d47" />
+              <path d="M54 40h49" stroke="#252b27" stroke-width="3" />
+              <path d="M96 47h31" stroke="#f1e7d3" stroke-width="2" opacity=".8" />
+            </g>
+            <path d="M0 635c193-20 310 15 482 7 171-8 265-30 422-13 197 21 402 29 696-4v45H0Z" fill="#24483c" opacity=".8" />
+          </svg>
+          <div class="scene-caption"><span>Composição ilustrativa</span><span>Acervo visual em formação</span></div>
+          <span class="scene-coordinates" aria-hidden="true">MÉDIO SOLIMÕES<br />AMAZONAS · BRASIL</span>
+          <div class="hero-edge" aria-hidden="true"><i></i><i></i><i></i></div>
+        </div>
+        <div class="hero-copy">
+          <aside class="hero-aside">
+            <span class="aside-mark" aria-hidden="true"></span>
+            <p>Território, lembrança<br />e tempo em movimento</p>
+            <span class="aside-place">Tefé · AM</span>
+          </aside>
+          <div class="hero-main">
+            <h1 id="hero-title">Memórias<br />de Tefé</h1>
+            <p class="hero-tagline">Histórias que o tempo não levou.</p>
+            <div class="hero-bottomline">
+              <p>Antes de ser cidade, Tefé já era território, memória e história.</p>
+              <div class="hero-actions">
+                <button class="button button-dark" type="button" data-mode="guided" data-scroll="linha-do-tempo">Iniciar viagem no tempo <span aria-hidden="true">↘</span></button>
+                <button class="text-button" type="button" data-mode="free" data-scroll="portais">Explorar a linha do tempo <span aria-hidden="true">↘</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#portais"><span>Desça para começar</span><span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section class="portals section-paper" id="portais" aria-labelledby="portals-title">
+        <div class="section-head portal-head">
+          <div>
+            <h2 id="portals-title">Escolha por onde<br />a história começa.</h2>
+          </div>
+          <p class="section-intro">Siga o curso do tempo capítulo a capítulo ou escolha um marco e chegue direto à época que chamou sua atenção.</p>
+        </div>
+        <div class="mode-switch" role="group" aria-label="Modo de navegação">
+          <button type="button" class="mode-button is-active" data-mode-choice="guided" aria-pressed="true"><span class="mode-symbol" aria-hidden="true">↘</span><span><strong>Viagem guiada</strong><small>Uma jornada em sequência</small></span></button>
+          <button type="button" class="mode-button" data-mode-choice="free" aria-pressed="false"><span class="mode-symbol" aria-hidden="true">⌖</span><span><strong>Exploração livre</strong><small>Você escolhe a próxima época</small></span></button>
+          <span class="mode-indicator" aria-hidden="true"></span>
+        </div>
+        <div class="portal-flow" id="portal-flow">
+          <button class="portal portal-before" type="button" data-jump="antes-da-cidade">
+            <span class="portal-river" aria-hidden="true"></span>
+            <span class="portal-index">Antes da cidade</span>
+            <span class="portal-title">Território<br />ancestral</span>
+            <span class="portal-note">Povos originários e os rios como caminho</span>
+            <span class="portal-arrow" aria-hidden="true">↘</span>
+          </button>
+          <button class="portal portal-missions" type="button" data-jump="missoes">
+            <span class="portal-year">Séculos XVII–XVIII</span>
+            <span class="portal-index">Missões religiosas</span>
+            <span class="portal-title">Encontros,<br />disputas e travessias</span>
+            <span class="portal-note">Uma povoação em formação no Médio Solimões</span>
+            <span class="portal-arrow" aria-hidden="true">↘</span>
+          </button>
+          <button class="portal portal-ega" type="button" data-jump="vila-de-ega">
+            <span class="portal-year">1759</span>
+            <span class="portal-index">Marco administrativo</span>
+            <span class="portal-title">Vila<br /><em>de Ega</em></span>
+            <span class="portal-note">O nome Ega entra no mapa</span>
+            <span class="portal-arrow" aria-hidden="true">↘</span>
+          </button>
+          <button class="portal portal-city" type="button" data-jump="cidade-de-tefe">
+            <span class="portal-year">15 junho · 1855</span>
+            <span class="portal-index">Elevação à cidade</span>
+            <span class="portal-title">Cidade<br />de Tefé</span>
+            <span class="portal-note">Da vila à cidade, um novo capítulo</span>
+            <span class="portal-arrow" aria-hidden="true">↘</span>
+          </button>
+        </div>
+        <div class="portal-foot"><span>Os marcos são portas de entrada. A história continua entre eles.</span><a href="#linha-do-tempo">Ver todos os capítulos <span aria-hidden="true">↓</span></a></div>
+      </section>
+
+      <div class="timeline-shell" id="linha-do-tempo">
+        <aside class="timeline-rail" aria-label="Navegação da linha do tempo">
+          <div class="rail-top"><span class="rail-star" aria-hidden="true"></span><span>Seu percurso</span></div>
+          <p class="rail-current"><span id="current-period">Antes da cidade</span><small id="current-date">Memórias anteriores à colonização</small></p>
+          <div class="rail-progress" aria-hidden="true"><span id="progress-fill"></span></div>
+          <nav class="rail-nav" aria-label="Capítulos históricos">
+            <a href="#antes-da-cidade" data-rail="antes-da-cidade" class="is-active" aria-current="location"><span class="rail-dot"></span><span>Antes da cidade</span></a>
+            <a href="#missoes" data-rail="missoes"><span class="rail-dot"></span><span>Missões</span></a>
+            <a href="#vila-de-ega" data-rail="vila-de-ega"><span class="rail-dot"></span><span>Vila de Ega</span></a>
+            <a href="#cidade-de-tefe" data-rail="cidade-de-tefe"><span class="rail-dot"></span><span>Cidade de Tefé</span></a>
+            <a href="#desenvolvimento" data-rail="desenvolvimento"><span class="rail-dot"></span><span>Educação e cidade</span></a>
+            <a href="#ciencia" data-rail="ciencia"><span class="rail-dot"></span><span>Ciência e floresta</span></a>
+            <a href="#tefe-hoje" data-rail="tefe-hoje"><span class="rail-dot"></span><span>Tefé contemporânea</span></a>
+          </nav>
+          <button class="rail-mode" type="button" id="rail-mode-toggle"><span aria-hidden="true">⇄</span> <span>Alternar navegação</span></button>
+        </aside>
+
+        <div class="chapters">
+          <section class="chapter chapter-deep" id="antes-da-cidade" data-chapter data-label="Antes da cidade" data-period="Memórias anteriores à colonização" aria-labelledby="chapter-before-title">
+            <div class="chapter-inner">
+              <div class="chapter-copy">
+                <p class="chapter-meta-head"><span>Capítulo 1</span><span class="status status-research">Em investigação</span></p>
+                <h2 id="chapter-before-title">Antes da cidade,<br />havia muitos mundos.</h2>
+                <p class="chapter-lead">Muito antes dos nomes coloniais, povos originários viviam, circulavam e construíam relações com os rios e as terras do Médio Solimões.</p>
+                <p>Esta história começa com presença e conhecimento. O território não era vazio: era lugar de vida, troca, deslocamento e memória, com povos e modos de existência diversos que precisam ser contados com suas próprias fontes e vozes.</p>
+                <a class="chapter-link" href="#ficha-exemplo">O que estamos pesquisando <span aria-hidden="true">↗</span></a>
+              </div>
+              <div class="chapter-art art-territory" role="img" aria-label="Diagrama ilustrativo de rios como caminhos e território habitado">
+                <svg viewBox="0 0 720 500" aria-hidden="true">
+                  <rect width="720" height="500" fill="#183b36" />
+                  <path d="M0 45c111 34 157-18 260 2 83 16 88 72 186 70 95-2 149-55 274-22v405H0Z" fill="#24483c" />
+                  <path d="M0 162c99-36 179 3 275 29 98 26 142 24 218-26 75-50 130-48 227-13v348H0Z" fill="#315844" />
+                  <path d="M-10 298c111-15 188-56 269-35 69 17 91 71 167 73 79 2 143-64 304-63v101c-141 6-231 70-333 66-93-4-129-64-205-75-64-10-125 25-202 31Z" fill="#4b8490" />
+                  <path d="M-10 334c96-15 158-49 235-33 75 16 104 71 180 79 79 9 153-48 325-59" fill="none" stroke="#bdd0b4" stroke-width="3" stroke-dasharray="8 13" />
+                  <g fill="#d2b978"><circle cx="134" cy="105" r="5"/><circle cx="186" cy="194" r="4"/><circle cx="522" cy="125" r="5"/><circle cx="599" cy="218" r="4"/><circle cx="381" cy="118" r="4"/><circle cx="263" cy="245" r="3"/></g>
+                  <g fill="none" stroke="#d2b978" stroke-width="1.4" opacity=".7"><path d="M134 105c24 22 31 55 52 89m0 0c28 4 49 16 77 51m118-127c55-6 94 2 141 7m78 93c-39 29-92 24-120 64"/></g>
+                  <text x="38" y="454" fill="#f1e7d3" font-family="sans-serif" font-size="12" letter-spacing="2">RIOS COMO CAMINHO</text>
+                  <text x="552" y="454" fill="#f1e7d3" font-family="sans-serif" font-size="12" letter-spacing="2">TERRITÓRIO VIVO</text>
+                </svg>
+                <span class="art-caption">Esquema conceitual · não representa povo ou mapa específico</span>
+              </div>
+              <div class="chapter-meta"><span>Histórias antes do registro colonial</span><span>Conteúdo em construção</span></div>
+            </div>
+          </section>
+
+          <section class="chapter chapter-paper" id="missoes" data-chapter data-label="Missões religiosas" data-period="Final do século XVII e século XVIII" aria-labelledby="chapter-missions-title">
+            <div class="chapter-inner">
+              <div class="chapter-copy">
+                <p class="chapter-meta-head"><span>Capítulo 2</span><span class="status status-research">Em investigação</span></p>
+                <h2 id="chapter-missions-title">Missões, margens<br />e disputas.</h2>
+                <p class="chapter-lead">No fim do século XVII e ao longo do XVIII, missões religiosas e autoridades coloniais disputaram presença e influência nas águas do Solimões.</p>
+                <p>A missão de Santa Teresa dos Axiuaris, Samuel Fritz e Frei André da Costa aparecem neste capítulo como pistas para pesquisa. Datas de fundação, deslocamento e reorganização ainda precisam ser confrontadas com documentos.</p>
+                <div class="names-line"><span>Samuel Fritz</span><span>Frei André da Costa</span><span>Santa Teresa d'Ávila</span></div>
+              </div>
+              <div class="scene-slot" data-scene-slot="mission-map">
+                <div class="scene-slot-head"><span>Mapa em preparação</span><span class="status status-art">Espaço para cena 3D</span></div>
+                <div class="map-placeholder" role="img" aria-label="Placeholder de cartografia histórica em desenvolvimento">
+                  <div class="map-water"></div><div class="map-contour contour-a"></div><div class="map-contour contour-b"></div>
+                  <span class="map-label map-label-one">Rio Solimões</span><span class="map-label map-label-two">Santa Teresa?</span>
+                  <span class="map-cross" aria-hidden="true">+</span><span class="map-north">N</span>
+                  <span class="map-note">Representação esquemática<br />sem escala e sem valor documental</span>
+                </div>
+                <div class="scene-slot-foot"><span>Imagem alternativa disponível</span><button type="button" class="motion-toggle" data-motion-toggle aria-pressed="false">Pausar movimento</button></div>
+              </div>
+              <div class="source-strip"><span class="source-symbol" aria-hidden="true">◉</span><span>As datas específicas serão exibidas quando houver fonte verificável associada.</span><a href="#fontes">Como citamos fontes <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </section>
+
+          <section class="chapter chapter-ega" id="vila-de-ega" data-chapter data-label="Vila de Ega" data-period="1759 · Vila de Ega" aria-labelledby="chapter-ega-title">
+            <div class="chapter-inner chapter-inner-wide">
+              <div class="chapter-copy chapter-copy-on-dark">
+                <p class="chapter-meta-head"><span>Capítulo 3 · Marco histórico</span><span class="status status-research">Data a referenciar</span></p>
+                <h2 id="chapter-ega-title"><span class="chapter-year">1759</span><br />O nome <em>Ega</em><br />entra no mapa.</h2>
+                <p class="chapter-lead">A povoação é apresentada no acervo inicial como Vila de Ega, um marco administrativo em meio às transformações políticas do período colonial.</p>
+                <p>A criação da vila, seu contexto e as formas anteriores de organização serão apresentados junto a documentos e versões históricas. Este protótipo não atribui um ato ou uma data sem referência anexada.</p>
+                <button type="button" class="button button-light" data-open="ega-detail">Abrir ficha do acontecimento <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="ega-map" data-scene-slot="ega-vila" aria-label="Composição artística de cartografia antiga com o nome Ega">
+                <div class="map-lines" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+                <span class="map-stamp">MÉDIO<br />SOLIMÕES</span>
+                <span class="ega-word">Ega</span>
+                <span class="ega-map-coord">Localização<br />a confirmar com fontes</span>
+                <div class="mini-river" aria-hidden="true"><svg viewBox="0 0 500 160"><path d="M-10 90c78-50 122-42 176-18 52 24 69 55 124 43 62-14 88-64 222-82" fill="none" stroke="#254b59" stroke-width="27"/><path d="M-10 90c78-50 122-42 176-18 52 24 69 55 124 43 62-14 88-64 222-82" fill="none" stroke="#7eaa9b" stroke-width="2" stroke-dasharray="4 11"/></svg></div>
+                <span class="art-caption">Mapa cenográfico · placeholder artístico</span>
+                <button class="scene-fullscreen" type="button" data-open="scene-ega">Ver área da reconstrução <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="chapter-meta"><span>1759 · marco central de navegação</span><span>Reconstrução visual não documental</span></div>
+            </div>
+          </section>
+
+          <section class="chapter chapter-city" id="cidade-de-tefe" data-chapter data-label="Cidade de Tefé" data-period="15 de junho de 1855 · Cidade de Tefé" aria-labelledby="chapter-city-title">
+            <div class="chapter-inner city-inner">
+              <div class="chapter-copy">
+                <p class="chapter-meta-head"><span>Capítulo 4 · Marco histórico</span><span class="status status-research">Referência pendente</span></p>
+                <h2 id="chapter-city-title"><span class="chapter-year">1855</span><br />Ega se torna<br /><em>Tefé.</em></h2>
+                <p class="chapter-lead">O dia 15 de junho de 1855 marca a elevação de Tefé à categoria de cidade no percurso histórico deste projeto.</p>
+                <p>A mudança de nome e o processo administrativo ganham uma linha do tempo própria. A origem e a etimologia de “Tefé” aguardam referência bibliográfica verificável.</p>
+                <div class="name-transition" aria-label="Transição do nome Ega para Tefé"><span>Ega</span><span class="transition-line" aria-hidden="true">→</span><strong>Tefé</strong></div>
+              </div>
+              <div class="city-scene" data-scene-slot="tefe-city">
+                <div class="city-scene-art" aria-hidden="true">
+                  <span class="city-sky"></span><span class="city-hill"></span>
+                  <span class="church church-main"><i></i></span><span class="church church-side"><i></i></span>
+                  <span class="city-trees"><i></i><i></i><i></i><i></i><i></i></span>
+                  <span class="city-water"></span>
+                </div>
+                <span class="scene-caption scene-caption-dark">Estudo de cena · arquitetura ainda não documentada</span>
+                <button class="scene-fullscreen" type="button" data-open="scene-city">Ver área da reconstrução <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="source-strip"><span class="source-symbol" aria-hidden="true">◉</span><span>15 de junho de 1855 · informação do briefing, aguardando citação documental.</span><a href="#fontes">Consultar fontes <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </section>
+
+          <section class="chapter chapter-paper chapter-urban" id="desenvolvimento" data-chapter data-label="Educação e cidade" data-period="Educação, religião e desenvolvimento urbano" aria-labelledby="chapter-urban-title">
+            <div class="chapter-inner">
+              <div class="chapter-copy">
+                <p class="chapter-meta-head"><span>Capítulo 5</span><span class="status status-research">Acervo em formação</span></p>
+                <h2 id="chapter-urban-title">Uma cidade feita<br />de muitos lugares.</h2>
+                <p class="chapter-lead">Igrejas, escolas e espaços públicos guardam camadas de construção, mudança e convivência.</p>
+                <p>Este capítulo acompanha transformações urbanas e a memória da educação sem antecipar datas ou biografias ainda não documentadas.</p>
+              </div>
+              <div class="memory-places" id="lugares">
+                <div class="memory-place place-church"><span class="place-mark" aria-hidden="true">T</span><span class="place-name">Igreja Matriz<br />de Santa Teresa</span><span class="place-status">História em pesquisa</span></div>
+                <div class="memory-place place-seminary"><span class="place-mark" aria-hidden="true">⌂</span><span class="place-name">Seminário<br />São José</span><span class="place-status">História em pesquisa</span></div>
+                <div class="memory-place place-school"><span class="place-mark" aria-hidden="true">▤</span><span class="place-name">Escolas e memórias<br />da educação</span><span class="place-status">Documentos a reunir</span></div>
+                <a class="places-link" href="#ficha-exemplo">Lugares que contam histórias <span aria-hidden="true">↗</span></a>
+              </div>
+              <div class="chapter-meta"><span>Arquitetura, ensino e vida urbana</span><span>Cartões editoriais demonstrativos</span></div>
+            </div>
+          </section>
+
+          <section class="chapter chapter-science" id="ciencia" data-chapter data-label="Ciência e floresta" data-period="Tefé e a pesquisa científica" aria-labelledby="chapter-science-title">
+            <div class="chapter-inner science-inner">
+              <div class="chapter-copy chapter-copy-on-dark">
+                <p class="chapter-meta-head"><span>Capítulo 6</span><span class="status status-research">Marcos a validar</span></p>
+                <h2 id="chapter-science-title">A floresta também<br />é lugar de pesquisa.</h2>
+                <p class="chapter-lead">A região do Médio Solimões se tornou referência para a ciência amazônica, a conservação e o diálogo com comunidades tradicionais.</p>
+                <p>O projeto Mamirauá, a Estação Ecológica e o Instituto de Desenvolvimento Sustentável Mamirauá abrem uma passagem da cartografia histórica aos mapas da pesquisa contemporânea.</p>
+              </div>
+              <div class="science-map" role="img" aria-label="Visualização gráfica contemporânea de rios e áreas de pesquisa, sem escala">
+                <div class="science-land"></div><div class="science-river river-main"></div><div class="science-river river-small"></div>
+                <span class="science-pin pin-a">Tefé</span><span class="science-pin pin-b">Mamirauá</span><span class="science-pin pin-c">Japurá</span>
+                <span class="science-grid-label">MÉDIO SOLIMÕES · VISUALIZAÇÃO ESQUEMÁTICA</span>
+              </div>
+              <div class="science-years"><span><strong>1990</strong><small>Estação Ecológica e Projeto Mamirauá · validar marcos</small></span><span><strong>1999</strong><small>Criação do Instituto Mamirauá · fonte pendente</small></span></div>
+            </div>
+          </section>
+
+          <section class="chapter chapter-today" id="tefe-hoje" data-chapter data-label="Tefé contemporânea" data-period="Tefé contemporânea" aria-labelledby="chapter-today-title">
+            <div class="chapter-inner today-inner">
+              <div class="chapter-copy">
+                <p class="chapter-meta-head"><span>Capítulo 7</span><span class="status status-research">Sua memória pode entrar aqui</span></p>
+                <h2 id="chapter-today-title">A história continua<br />em cada lembrança.</h2>
+                <p class="chapter-lead">A cidade muda, as fotografias se acumulam e novas histórias passam de uma geração para a outra.</p>
+                <p>O capítulo contemporâneo vai aproximar imagens de hoje, registros de outras épocas e relatos de quem viveu essas transformações.</p>
+              </div>
+              <div class="today-comparison" aria-label="Espaço para comparador visual antes e depois">
+                <div class="compare-half compare-past"><span>Ontem</span><span class="compare-placeholder">Fotografia histórica<br />placeholder</span></div>
+                <div class="compare-divider"><span>↔</span></div>
+                <div class="compare-half compare-now"><span>Hoje</span><span class="compare-placeholder">Imagem contemporânea<br />a reunir</span></div>
+                <p>O acervo visual será publicado com autoria, origem e condições de uso.</p>
+              </div>
+              <div class="chapter-meta"><span>Passado e presente, lado a lado</span><span>Sem fotografias de terceiros nesta prévia</span></div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section class="records section-paper" id="ficha-exemplo" aria-labelledby="records-title">
+        <div class="section-head records-head">
+          <div><h2 id="records-title">Cada história<br />tem um caminho.</h2></div>
+          <p class="section-intro">Acontecimentos, pessoas e lugares ganham fichas conectadas à linha do tempo, com seu estado de pesquisa sempre à vista.</p>
+        </div>
+        <div class="record-grid">
+          <article class="record-card record-event" id="ega-detail">
+            <div class="record-top"><span class="record-type">Acontecimento</span><span class="status status-research">Em investigação</span></div>
+            <p class="record-date">1759</p><h3>Elevação de Ega à categoria de vila</h3>
+            <p>Resumo, contexto e divergências serão incorporados após a associação de documentação verificável.</p>
+            <button type="button" class="record-more" data-open="ega-detail">Abrir ficha <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="record-card record-person">
+            <div class="record-top"><span class="record-type">Pessoa</span><span class="status status-research">Ficha provisória</span></div>
+            <div class="person-initials" aria-hidden="true">SF</div><h3>Samuel Fritz</h3>
+            <p>Nome incluído como pista de pesquisa sobre as missões. Relação e cronologia serão descritas com fontes.</p>
+            <p class="name-list"><strong>Outras pistas:</strong> Corinto Borges Passanha, Antídio Borges Passanha, Eduardo Sá e Eduardo Ribeiro.</p>
+            <a class="record-more" href="#fontes">Ver critérios de biografia <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="record-card record-place">
+            <div class="record-top"><span class="record-type">Lugar</span><span class="status status-research">História em pesquisa</span></div>
+            <div class="place-illustration" aria-hidden="true"><span></span><i></i><b></b></div><h3>Igreja Matriz de Santa Teresa</h3>
+            <p>Fotografias, fases de construção e referências serão reunidas antes da publicação de uma cronologia.</p>
+            <a class="record-more" href="#lugares">Conhecer o modelo de ficha <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <div class="source-model" id="fontes">
+          <div class="source-model-mark" aria-hidden="true">§</div>
+          <div><h3>Uma fonte visível<br />muda a leitura.</h3></div>
+          <div class="source-model-copy"><p>As fichas mostrarão autoria, título, data, instituição, página ou link e observações sobre possíveis divergências. Neste protótipo, nenhuma referência bibliográfica foi inventada.</p><div class="source-statuses" aria-label="Estados de leitura"><span class="status status-documented">Documentado</span><span class="status status-research">Em investigação</span><span class="status status-oral">Tradição oral</span><span class="status status-art">Reconstrução artística</span></div><div class="source-meta"><span>Autor ou instituição</span><span>Obra ou documento</span><span>Ano e página</span><span>Link e observações</span></div><p class="source-credit-model"><strong>Crédito visual</strong> Autor ou acervo · data · licença ou autorização · link original.</p></div>
+        </div>
+      </section>
+
+      <section class="voices" id="vozes" aria-labelledby="voices-title">
+        <div class="voices-inner">
+          <div><h2 id="voices-title">Vozes de<br />Tefé.</h2></div>
+          <div class="voices-copy"><p class="voices-quote">“Toda cidade guarda histórias que não cabem nos documentos.”</p><p class="voices-caption">Prévia conceitual · a frase acima é texto demonstrativo, não um depoimento real.</p><div class="voice-wave" aria-label="Espaço reservado para gravações de áudio"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="voice-placeholder-label">Áudios e relatos · espaço reservado</span></div>
+        </div>
+        <div class="voices-bottom"><span>Relatos pessoais · tradição oral · lenda</span><span>Com consentimento, contexto e identificação clara</span></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#inicio"><span class="footer-star" aria-hidden="true"></span><span class="brand-name">Memórias <span>de Tefé</span></span></a>
+      <p>Um projeto independente de memória, pesquisa e pertencimento.</p>
+      <a href="#inicio" class="back-top">Voltar ao começo <span aria-hidden="true">↑</span></a>
+      <small>Versão de protótipo · fontes e acervo em construção</small>
+    </footer>
+
+    <dialog class="detail-dialog" id="detail-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Fechar">×</button>
+      <p class="dialog-context" id="dialog-kicker">Ficha de acontecimento</p>
+      <h2 id="dialog-title">1759 · Vila de Ega</h2>
+      <p id="dialog-copy">Esta ficha é demonstrativa. As informações e datas serão acompanhadas por fontes verificáveis antes da publicação.</p>
+      <div class="dialog-facts"><span>Estado <strong>Em investigação</strong></span><span>Fontes associadas <strong>Ainda não adicionadas</strong></span><span>Material visual <strong>Placeholder identificado</strong></span></div>
+      <button type="button" class="button button-dark dialog-ok">Entendi</button>
+    </dialog>
+  </body>
+</html>

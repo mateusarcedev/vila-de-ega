@@ -1,0 +1,15 @@
+.next/
+node_modules/
+out/
+coverage/
+test-results/
+playwright-report/
+*.tsbuildinfo
+.env*
+!.env.example
+.agents/
+.aider-desk/
+.bob/
+.claude/
+.taste-skill/
+.vercel/

@@ -1,0 +1,16 @@
+{
+  "frames": 177,
+  "sourceFps": 13.69,
+  "seconds": 12.85,
+  "egaState": {
+    "active": "vila-de-ega",
+    "marker": "vila-de-ega"
+  },
+  "tefeState": {
+    "active": "cidade-de-tefe",
+    "marker": "cidade-de-tefe",
+    "url": "#linha-do-tempo",
+    "scrollY": 1954
+  },
+  "errors": []
+}

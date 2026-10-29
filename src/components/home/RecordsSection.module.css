@@ -1,0 +1,11 @@
+.section { padding: clamp(66px,9vw,118px) var(--page-margin) 0; background: #e8dfce; }
+.head { display: grid; grid-template-columns: 1fr .85fr; align-items: end; gap: 38px; margin-bottom: 34px; }.head h2 { margin: 0; font: 500 clamp(43px,5.4vw,74px)/.94 var(--font-serif),serif; letter-spacing: -.04em; }.head > p { max-width: 47ch; margin: 0 0 4px; color: #62675e; font: 13px/1.7 var(--font-sans),sans-serif; }
+.grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 9px; }
+.more { display: grid; grid-template-columns: 1fr 2fr auto; align-items: start; gap: 15px; padding: 23px 0 34px; color: #6a6f66; font: 10px var(--font-sans),sans-serif; }.more > div { display: flex; flex-wrap: wrap; gap: 7px 15px; }.more a { color: var(--forest); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.voices { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 32px; padding: clamp(33px,6vw,70px) 0; border-top: 1px solid var(--line); }
+.voices > div:first-child p { margin: 0 0 12px; color: var(--bronze); font: 600 10px var(--font-sans),sans-serif; letter-spacing: .09em; text-transform: uppercase; }
+.voices h2 { margin: 0; color: var(--forest); font: 500 clamp(52px,7vw,88px)/.84 var(--font-serif),serif; letter-spacing: -.04em; }
+.voicesCopy { max-width: 57ch; margin: 0 0 11px; font: 500 clamp(20px,2.4vw,29px)/1.2 var(--font-serif),serif; }.voicesNote { color: #6c7168; font: 10px var(--font-sans),sans-serif; }
+.voiceTypes { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }.voiceTypes span { padding: 6px 10px; border: 1px solid rgba(37,43,39,.22); color: #555e55; font: 10px var(--font-sans),sans-serif; }
+@media (max-width: 850px) { .grid { grid-template-columns: 1fr 1fr; } .grid > :last-child { grid-column: 1/-1; } .more { grid-template-columns: 1fr; }.voices { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .head { grid-template-columns: 1fr; gap: 18px; }.grid { grid-template-columns: 1fr; }.grid > :last-child { grid-column: auto; }.voices { gap: 20px; } }

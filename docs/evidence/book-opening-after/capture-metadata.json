@@ -1,0 +1,45 @@
+{
+  "modelRevision": 9,
+  "states": [
+    {
+      "label": "25",
+      "requested": 0.25,
+      "actual": 0.262
+    },
+    {
+      "label": "50",
+      "requested": 0.5,
+      "actual": 0.506
+    },
+    {
+      "label": "75",
+      "requested": 0.75,
+      "actual": 0.751
+    }
+  ],
+  "finalProgress": 1,
+  "interaction": {
+    "keyboard": true,
+    "pointer": true,
+    "reversalVerified": true,
+    "reverseEndpoint": 0
+  },
+  "timeline": {
+    "selected": "cidade-de-tefe",
+    "canvas": true,
+    "overflow": 0
+  },
+  "mobileSize": {
+    "width": 390,
+    "viewport": 390,
+    "mode": "interactive"
+  },
+  "mobileSelected": "true",
+  "reducedModes": {
+    "book": "static",
+    "timeline": "static"
+  },
+  "errors": [],
+  "videoEvidence": "../book-opening-after.webm",
+  "videoMetadata": "../book-opening-video-metadata.json"
+}

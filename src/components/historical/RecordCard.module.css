@@ -1,0 +1,8 @@
+.card { display: flex; min-height: 275px; flex-direction: column; padding: 20px; border: 1px solid rgba(37,43,39,.19); background: rgba(250,246,237,.35); }
+.top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; color: var(--forest); font: 600 10px var(--font-sans),sans-serif; text-transform: uppercase; letter-spacing: .07em; }
+.eyebrow { margin: 24px 0 2px; color: var(--bronze); font: 500 25px var(--font-serif),serif; }
+.card h3 { margin: 26px 0 10px; font: 500 28px/1 var(--font-serif),serif; }
+.eyebrow + h3 { margin-top: 3px; }
+.card h3 a:hover { color: var(--forest); }
+.detail { margin: 0 0 18px; color: #63685f; font: 12px/1.6 var(--font-sans),sans-serif; }
+.link { display: inline-flex; align-items: center; gap: 8px; min-height: 36px; margin-top: auto; color: var(--forest); font: 600 11px var(--font-sans),sans-serif; }

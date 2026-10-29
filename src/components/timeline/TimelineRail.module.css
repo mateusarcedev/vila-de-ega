@@ -1,0 +1,26 @@
+.rail { position: sticky; top: 0; display: flex; min-width: 0; height: 100svh; max-height: 900px; min-height: 600px; flex-direction: column; align-self: start; padding: 34px 20px 24px var(--page-margin); background: var(--paper); }
+.top { display: flex; align-items: center; gap: 9px; color: var(--forest); font: 600 11px var(--font-sans),sans-serif; }
+.top span { width: 8px; height: 8px; border-radius: 50%; background: var(--flag-green); }
+.current { margin: 20px 0 24px; font: 600 24px/1 var(--font-serif),serif; }
+.current small { display: block; margin-top: 8px; color: #73786f; font: 11px/1.4 var(--font-sans),sans-serif; }
+.nav { position: relative; display: flex; min-width: 0; max-width: 100%; flex-direction: column; }
+.nav::before { position: absolute; top: 15px; bottom: 15px; left: 4px; width: 1px; background: rgba(37,43,39,.22); content: ""; }
+.nav a { position: relative; display: flex; align-items: center; gap: 11px; min-height: 43px; color: #72776f; font: 11px var(--font-sans),sans-serif; }
+.nav a:hover,.nav a.selected { color: var(--forest-deep); font-weight: 600; }
+.dot { position: relative; z-index: 1; width: 10px; height: 10px; flex: none; border: 1px solid #868e81; border-radius: 50%; background: var(--paper); }
+.selected .dot { border: 2px solid var(--flag-green); background: var(--flag-green); }
+.toggle { display: inline-flex; width: fit-content; align-items: center; gap: 8px; min-height: 44px; margin-top: auto; padding: 8px 0 0; border: 0; color: var(--forest); background: transparent; font: 600 11px var(--font-sans),sans-serif; cursor: pointer; }
+.toggle span { font-size: 16px; }
+.periodToggle { display: none; }
+@media (max-width: 900px) {
+  .rail { position: sticky; z-index: 4; top: 0; width: 100%; min-width: 0; height: auto; max-height: none; min-height: auto; padding: 18px var(--page-margin) 13px; box-shadow: 0 5px 16px rgba(37,43,39,.07); }
+  .current { margin: 10px 0; font-size: 20px; }
+  .periodToggle { display: flex; width: 100%; min-height: 38px; align-items: center; justify-content: space-between; margin-top: 5px; padding: 0 10px; border: 1px solid var(--line); color: var(--forest); background: transparent; font: 600 11px var(--font-sans),sans-serif; }
+  .periodToggle span:last-child { color: var(--bronze); font-size: 15px; }
+  .nav { display: none; width: 100%; min-width: 0; gap: 7px; overflow: visible; padding: 9px 0 2px; }
+  .navOpen { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .nav::before { display: none; }
+  .nav a { min-width: 0; min-height: 35px; gap: 7px; padding: 0 10px; border: 1px solid var(--line); border-radius: 99px; overflow-wrap: anywhere; }
+  .dot { width: 7px; height: 7px; }
+  .toggle { min-height: 31px; margin-top: 5px; }
+}

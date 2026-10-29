@@ -1,0 +1,5 @@
+.badge { display: inline-flex; width: fit-content; align-items: center; min-height: 23px; padding: 3px 9px; border: 1px solid currentColor; border-radius: 99px; font: 600 10px/1.2 var(--font-sans), sans-serif; letter-spacing: .02em; }
+.documented { color: #315e43; background: #e4ebdf; }
+.under-investigation { color: #765c2f; background: #f2e8d2; }
+.oral-tradition { color: #315965; background: #e1eceb; }
+.artistic-reconstruction { color: #674c39; background: #eee5db; }

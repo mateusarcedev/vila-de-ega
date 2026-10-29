@@ -1,0 +1,9 @@
+.page { background: var(--paper); }
+.breadcrumb { display: flex; justify-content: space-between; padding: 21px var(--page-margin); border-bottom: 1px solid var(--line); color: #686d64; font: 11px var(--font-sans),sans-serif; }.breadcrumb a { color: var(--forest); font-weight: 600; }
+.article { max-width: 1060px; min-height: 62vh; margin: 0 auto; padding: clamp(65px,9vw,120px) var(--page-margin) 80px; }
+.meta { display: flex; align-items: center; gap: 14px; color: var(--forest); font: 600 11px var(--font-sans),sans-serif; }
+.article h1 { max-width: 13ch; margin: 24px 0; font: 500 clamp(54px,8vw,100px)/.9 var(--font-serif),serif; letter-spacing: -.045em; }
+.summary { max-width: 54ch; margin: 0 0 24px; font: 500 clamp(22px,2.7vw,32px)/1.2 var(--font-serif),serif; }
+.body { max-width: 68ch; color: #535a50; font: 14px/1.75 var(--font-sans),sans-serif; }.body p { margin: 0 0 16px; }
+.scene { max-width: 760px; margin-top: 27px; }
+.related { max-width: 68ch; margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--line); color: #5f665c; font: 12px/1.7 var(--font-sans),sans-serif; }.related a { color: var(--forest); text-decoration: underline; }

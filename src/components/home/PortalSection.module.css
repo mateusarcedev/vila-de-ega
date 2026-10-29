@@ -1,0 +1,7 @@
+.section { padding: clamp(66px,9vw,120px) var(--page-margin) clamp(65px,8vw,104px); background: var(--paper-light); }
+.head { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(260px,.9fr); align-items: end; gap: 40px; }
+.head h2 { margin: 0; font: 500 clamp(42px,5.5vw,76px)/.94 var(--font-serif),serif; letter-spacing: -.04em; }
+.head p { max-width: 46ch; margin: 0 0 5px; color: #62675e; font: 13px/1.7 var(--font-sans),sans-serif; }
+.foot { display: flex; justify-content: space-between; gap: 15px; padding-top: 20px; color: #70756c; font: 10px var(--font-sans),sans-serif; }
+.foot a { color: var(--forest); font-weight: 600; }
+@media (max-width: 700px) { .head { grid-template-columns: 1fr; gap: 18px; } .head p { max-width: 40ch; } .foot { flex-direction: column; } }
